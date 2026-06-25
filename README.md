@@ -41,9 +41,14 @@ Clone (or pull) this repo, then make `skills/ax-agent-spec/` discoverable
 by your local Claude Code:
 
 ```bash
-git clone <repo-url> ~/projects/ax-framework
+mkdir -p ~/.claude/skills
+git clone https://github.com/yuhakim-ux/ax-framework.git ~/projects/ax-framework
 ln -s ~/projects/ax-framework/skills/ax-agent-spec ~/.claude/skills/ax-agent-spec
 ```
+
+The skill reads shared references (primitives, invariants, channel
+profiles) from the repo via the symlink, so **the cloned repo must stay
+in place** — don't delete `~/projects/ax-framework` after linking.
 
 Restart Claude Code (or reload skills) so it picks up the new entry. You
 can verify by asking Claude: *"Do you have `ax-agent-spec` available?"* —
