@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.0.7 — ax-agent-spec: SKILL.md authored (orient/intake/audit/challenge/gate/re-entry flow).
+
 ## v0.0.6 — ax-agent-spec: replace rubric with canonical 13-row v1.0; resync spec-template + manifest.
 
 ## v0.0.5 — ax-agent-spec: rubric + situation taxonomy + spec template + manifest.
