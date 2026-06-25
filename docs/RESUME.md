@@ -23,6 +23,7 @@ Yuha also ran a personal newcomer dry-run: user-level symlink install works; sha
 - 264-input-prd.md is 887KB (base64 screenshots) — strip images if it slows eval reads.
 - primitives header platform_release says "Summer '26 (264)" — confirm whether 264 is internal vs platform release at Phase 4 refresh.
 - primitives Known-unknowns #1-7 pending Phase 4 steward refresh (Data Library, Builder GA, voice parity, default-routing-by-description, etc.).
+- eval/golden files were redacted in a prior (chat) session, not verifiable from this repo's history. Spot-check is clean, but run a full name/email/internal-link sweep before granting the pilot designer repo access.
 
 ## OPEN decisions — resolve before Phase 2 build
 1. Six AX dimensions: is Role/Boundaries ONE dimension or TWO? Decides the blueprint interview row count. (Claude recommends ONE — two sides of the same question; Yuha to confirm against her real 264/Patient Access experience.)
