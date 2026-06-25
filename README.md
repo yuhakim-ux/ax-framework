@@ -66,15 +66,15 @@ handle for the future pattern library. You can defer them once
 (recorded as an Open Question) but the skill will nudge you to fill them
 in before publishing.
 
-### 3. Google Drive (recommended)
+### 3. Google Drive (recommended, not required)
 
 The skill publishes generated specs as Google Docs in your connected
 Drive. You need a Google MCP tool enabled in Claude Code for this to
 work.
 
-**If Drive is unavailable**, the skill saves `.md` and `.docx` files
-locally, tells you the paths, and continues. You can re-import later
-when Drive is reconnected.
+> **If you can't connect Google Drive, just proceed.** The skill saves
+> the spec as `.md` and `.docx` locally and tells you where. Drive is a
+> convenience, not a requirement for the pilot.
 
 ---
 
@@ -204,10 +204,13 @@ pilot. Please report on the following specifically:
   form-filling artifact? Where did it succeed, where did it feel
   hollow?
 
-**How to capture.** The simplest thing is a Google Doc or Slack thread
-shared back to Yuha — date-stamped, with a short narrative for each of
-(a)–(e). Screenshots of the challenge report or generated spec at the
-moments something went well or badly are gold.
+**How to capture.** Drop your write-up into the shared pilot-feedback
+Google Doc:
+https://docs.google.com/document/d/1EZ3fUd0OvcM0jywkG8KgxIC2cVMxfGIR9E-dpd2BfRQ/edit
+— it's pre-seeded with the five (a)–(e) prompts as headings and a place
+to record your name, date, and the agent/PRD you tested. Screenshots of
+the challenge report or generated spec at the moments something went
+well or badly are gold.
 
 Pilot feedback from at least one non-author designer is on the
 promotion checklist for the shared HC Design repo (see
