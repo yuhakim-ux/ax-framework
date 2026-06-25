@@ -174,10 +174,19 @@ Verified action categories (Apex-family) from the live docs:
   InvocableMethod."
   — https://developer.salesforce.com/docs/ai/agentforce/guide/get-started-actions.html
 
-Additional steward-asserted categories not surfaced on the page above:
+Agent Script action `target` types (the mechanism wiring) from the live
+docs:
 
-- **Flow actions** [steward-provided, link pending]
-- **Prompt Template actions** [steward-provided, link pending]
+- **`apex`** — Apex actions.
+- **`flow`** — Flow actions.
+- **`prompt`** — Prompt Template actions.
+  > An action target uses the format `{TARGET_TYPE}://{DEVELOPER_NAME}`
+  > with supported types `apex` (Apex), `flow` (Flow), and `prompt`
+  > (Prompt Template).
+  — https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-actions.html
+
+Additional steward-asserted categories not surfaced on the pages above:
+
 - **API / External Service actions** (beyond Apex REST)
   [steward-provided, link pending]
 - **OOTB standard actions** [steward-provided, link pending]
@@ -227,11 +236,12 @@ the v1.0 pass and remain steward-asserted. Next refresh should chase these:
    editable copy in the Builder ("how and when to leverage this agent").
 4. **Guidance split** (Script = CONTROL, instructions = BEHAVIOR) as
    stated. Implied by retrievable docs but not directly quoted.
-5. **Action mechanisms beyond Apex-family** — Flow, Prompt Template,
-   External Service, OOTB standard actions. The `get-started-actions.html`
-   page surfaced only the four Apex-family categories above; the full list
-   is likely on `ascript-ref-actions.html` (linked but not fetched in this
-   pass).
+5. **External Service and OOTB standard actions.** Verified at the Agent
+   Script `target`-type layer: `apex`, `flow`, `prompt`
+   (`ascript-ref-actions.html`). The broader catalog categories
+   (API / External Service actions beyond Apex REST; OOTB standard
+   actions) were not surfaced on `get-started-actions.html` or
+   `ascript-ref-actions.html`; canonical pages still unknown.
 6. **Channel parity claim and voice GA status.** The Voice channel page
    returned 404 on the guessed URL; canonical path is unknown.
 7. **Exact term "deterministic sandwich."** Documented mechanics support

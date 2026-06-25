@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.0.4 — primitives: verify Agent Script action targets (apex/flow/prompt).
+
 ## v0.0.3 — references: primitives v1 + invariants + text channel profile.
 
 ## v0.0.2 — DESIGN.md amended: audience, Layer 2 spine, Layer 3 pattern ecosystem, team-scoping + visibility, governance.
