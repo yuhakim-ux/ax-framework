@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.0.11 — ax-agent-spec: description optimization (remove workflow summary, inline trigger phrases, explicit negative carve-outs).
+
 ## v0.0.10 — ax-agent-spec iteration 02: blank-mechanism-on-spike rule + STEP 3 taxonomy sweep with evidence-only/SA-N-anchor guardrails; eval re-run as run-A2/run-B2.
 
 ## v0.0.9 — eval: 264 golden runs A (developed PRD) + B (sparse PRD) with behavioral reports.

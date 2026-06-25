@@ -1,6 +1,6 @@
 ---
 name: ax-agent-spec
-description: Interview-driven Layer 1 Agent Spec generation for Agentforce, following the AX Design Framework. Fire this skill whenever the user is defining, drafting, auditing, or reviewing requirements for an Agentforce agent — even when they don't say "spec" or "AX framework." Trigger contexts include "agent spec", "agent requirements", "agent PRD", "subagent design", "Agentforce agent", "voice agent spec", "help me define an agent", "turn this PRD into a spec", "audit my agent requirements", "review this agent doc", and any request to plan, scope, gap-check, or harden an agent's definition before engineering can build it. Operates on PRD-quality input that is assumed LOW and aggressively challenges gaps in PM language, triaging P0 (blocks build) vs P1 (logged as spike, move on). Produces an all-sections-present Google Doc that becomes the working SSOT.
+description: Use when defining, designing, auditing, or reviewing requirements for an Agentforce agent — even without the words "spec" or "AX framework". Fires on "agent spec", "agent PRD", "subagent design", "voice agent spec", "help me spec out an agent", "turn this PRD into agent requirements", "review this agent PRD", "audit these agent requirements", "what do I need before engineering can build this agent". Layer 1 of the AX Design Framework. Not for LWC/UI design or pattern-library work.
 ---
 
 # ax-agent-spec
