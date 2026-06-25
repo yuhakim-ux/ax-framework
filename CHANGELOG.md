@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.0.9 — eval: 264 golden runs A (developed PRD) + B (sparse PRD) with behavioral reports.
+
 ## v0.0.8 — ax-agent-spec: lint_spec.py + fixtures + definition-of-done.
 
 ## v0.0.7 — ax-agent-spec: SKILL.md authored (orient/intake/audit/challenge/gate/re-entry flow).
