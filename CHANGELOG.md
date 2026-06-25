@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.0.6 — ax-agent-spec: replace rubric with canonical 13-row v1.0; resync spec-template + manifest.
+
 ## v0.0.5 — ax-agent-spec: rubric + situation taxonomy + spec template + manifest.
 
 ## v0.0.4 — primitives: verify Agent Script action targets (apex/flow/prompt).

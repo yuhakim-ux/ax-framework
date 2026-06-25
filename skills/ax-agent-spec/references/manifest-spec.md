@@ -20,13 +20,18 @@ following tables, in this order, with these column names verbatim.
 
 | Column           | Type        | Notes                                                                  |
 |------------------|-------------|------------------------------------------------------------------------|
-| Rubric row       | string      | "1. Agent purpose & success criteria" … "13. Exit conditions & handoff/escalation — SA-<N>". Subagent rows include the SA-N suffix. |
+| Rubric row       | string      | "1. Goal + non-goals" … "13. v1 scope boundary + open spikes". Subagent rows include the SA-N suffix (e.g. "6. Action inventory — SA-1"). |
 | Scope            | enum        | `Agent` or `Subagent`.                                                  |
 | Status           | enum        | One of the six status values below.                                     |
 | Notes / Spike refs | string    | Free text; may reference spike IDs (e.g. `S-03`).                       |
 
-One row per rubric P0 row. Subagent rows 8–13 repeat once per subagent.
-Conditional-tier rows appear here ONLY when triggered.
+One row per rubric P0 row. Row 5 (Subagent inventory) appears once; the
+subagent-scoped rows 6–8 (Action inventory / Execution mechanism /
+Data + Variables Block) repeat once per subagent. Conditional-tier rows
+appear here ONLY when triggered, including the two subagent-scoped
+conditionals (Grounding for INFORMATIONAL subagents; Confirmation /
+verification for TRANSACTIONAL subagents with irreversible or regulated
+actions).
 
 ### 2. Source documents ingested
 
@@ -141,7 +146,8 @@ Per DESIGN.md "Layer 1 output architecture":
   user) on schema drift.
 - Read every `Status` value and check against the inline tag for the
   matching section.
-- Build a per-subagent index from rubric rows 8–13 by SA-N suffix.
+- Build a per-subagent index from rubric rows 6–8 (and the two
+  subagent-scoped conditional rows when triggered) by SA-N suffix.
 - Surface contradictions (inline-tag vs manifest, section vs primitives,
   section vs section) before generating the next version.
 
