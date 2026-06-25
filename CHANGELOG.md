@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.0.10 — ax-agent-spec iteration 02: blank-mechanism-on-spike rule + STEP 3 taxonomy sweep with evidence-only/SA-N-anchor guardrails; eval re-run as run-A2/run-B2.
+
 ## v0.0.9 — eval: 264 golden runs A (developed PRD) + B (sparse PRD) with behavioral reports.
 
 ## v0.0.8 — ax-agent-spec: lint_spec.py + fixtures + definition-of-done.

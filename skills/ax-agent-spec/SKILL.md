@@ -193,6 +193,43 @@ nothing more. If the user asks "is there an existing pattern for
 this?", answer honestly: "Not yet — Phase 3 builds the registry; for
 now I'm only flagging candidates."
 
+**Taxonomy sweep (do this once per generation).** Before finalising
+the PATTERN CANDIDATES table, walk EVERY situation in
+`references/situation-taxonomy.md` against the gathered evidence. For
+each situation, ask: does the source (PRD + interview answers + sections
+already filled) contain a passage that is a clear instance of this
+situation? If yes, tag it. The goal is full coverage of situations the
+input actually supports — not a minimum bar of 2 or 3.
+
+Common misses worth scanning for explicitly because they hide in plain
+sight:
+
+- `irreversible-action-confirmation` — any subagent whose row 10 actions
+  include `create` / `send` / `submit` / `close` (anything the platform
+  can't undo without operational cost) needs this tag, distinct from
+  generic `confirmation`.
+- `disambiguation` — any source passage describing multi-intent input,
+  ambiguous case lookups, or "if multiple X are found …" branches.
+- `missing-fallback` — any branch the source describes as "if no X is
+  found / if X fails / if we can't …" without a defined alternative
+  path.
+
+**Evidence-only bar — do not weaken on this fix.** A candidate is
+taggable ONLY when:
+
+1. The source contains a concrete passage supporting it (quote-able or
+   cite-able to a section), AND
+2. It can be anchored to a real `SA-N` reference. If row 5 (Subagent
+   inventory) is MISSING, the PATTERN CANDIDATES table stays EMPTY —
+   record the observation in prose under the table (which recurring
+   situations the source hints at) but do NOT invent `SA-?` rows just
+   to populate the table. The next generation, once subagents exist,
+   tags them.
+
+If a situation is plausible but the source does not name the case, do
+NOT tag it. Under-tagging is a v0.1 fix in a later generation; spurious
+tagging is invention and never repairs.
+
 ## STEP 4 · Gate + Generate
 
 ### P0 gate
@@ -241,6 +278,14 @@ Render from `references/spec-template.md`. Requirements:
    re-entry rules in STEP 5.
 6. **Deferred placeholders rendered** as named L2/L3 stubs per the
    template — never blank, never invented.
+7. **Mechanism cell rule (section 7 per subagent).** When a row-7
+   action's status is `SPIKE` or `MISSING`, OR when the source did not
+   state the action's execution mechanism, the Mechanism cell MUST be
+   BLANK. NEVER guess a target type (`apex` / `flow` / `prompt` / OOTB)
+   to fill the cell. The `Spike (if not)` cell carries the spike ID
+   where applicable; the Mechanism cell stays empty until the spike
+   resolves. Pairing a guessed mechanism with SPIKE status is invention,
+   not a soft issue.
 
 ### Lint before publishing
 

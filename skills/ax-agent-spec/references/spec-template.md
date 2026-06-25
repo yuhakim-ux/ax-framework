@@ -169,6 +169,11 @@ references/channels/ profile.>
 | 1.1       |                                                | yes / no      | S-<NN>          |
 | 1.2       |                                                |               |                 |
 
+> **Mechanism cell rule:** if the source did not state a target type for
+> an action, leave the Mechanism cell BLANK and mark the row's status
+> SPIKE (with a spike ID). NEVER guess `apex` / `flow` / `prompt` /
+> OOTB to fill the column.
+>
 > Challenge if MISSING: "Which actions assume a capability that doesn't
 > exist yet?"
 
