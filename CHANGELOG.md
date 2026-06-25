@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.0.5 — ax-agent-spec: rubric + situation taxonomy + spec template + manifest.
+
 ## v0.0.4 — primitives: verify Agent Script action targets (apex/flow/prompt).
 
 ## v0.0.3 — references: primitives v1 + invariants + text channel profile.
