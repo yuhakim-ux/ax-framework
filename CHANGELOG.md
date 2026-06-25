@@ -1,5 +1,7 @@
 # Changelog
 
+## v0.1.0 — Phase 1 complete: references layer (primitives v1, invariants, text channel), ax-agent-spec skill (interview / manifest / P0-gate / Drive-publish / re-entry / pattern-candidate tagging), lint + DoD, 264 golden evals (A developed + B sparse) at iteration 02.
+
 ## v0.0.11 — ax-agent-spec: description optimization (remove workflow summary, inline trigger phrases, explicit negative carve-outs).
 
 ## v0.0.10 — ax-agent-spec iteration 02: blank-mechanism-on-spike rule + STEP 3 taxonomy sweep with evidence-only/SA-N-anchor guardrails; eval re-run as run-A2/run-B2.

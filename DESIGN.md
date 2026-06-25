@@ -6,6 +6,9 @@ Health Cloud agent work. Three layers, three skills: ax-agent-spec (Layer 1,
 this phase), ax-behavior-blueprint (Layer 2), ax-agent-interface (Layer 3).
 Skills share a common references/ layer. One version number across the suite.
 
+Full strategy & PRD companion: docs/AX-Framework-Skills-Strategy.md (keep
+in sync when decisions change).
+
 ## Distribution
 Develop and test in this personal repo. After testing clears, publish tagged
 releases to the shared HC Design repo:
