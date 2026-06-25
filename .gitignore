@@ -1,2 +1,4 @@
 docs/ax-architecture-diagram.svg
 docs/ax-architecture.html
+.DS_Store
+**/__pycache__/
